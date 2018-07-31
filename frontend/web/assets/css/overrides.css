@@ -50,12 +50,12 @@
     background: rgb(236, 236, 236);
 }
 
-/*added new*/
+/*-----------------------added new------------------------------------------*/
+
+
 
 #pagesearch {
-
     color: #ffffff;
-
 }
 #pagesearch input[type=text] {
     background-color: white;
@@ -89,9 +89,31 @@
     width: 5px;
 }
 
-/*input checkbox*/
-/*#autoSizingCheck2{*/
-    /*padding:20px;*/
-    /*height: 20px;*/
-    /*width:20px;*/
-/*}*/
+
+
+/* for register and login form*/
+.loginx{
+    padding: 20px;
+}
+
+#login, #register{
+    width:80px;
+    background-color: #40d4e4;
+    color: #fff;
+}
+.loginx h3,.loginx span, .loginx .forget{
+    color: #40e4d4
+}
+.loginx .btn {
+    color:#fff;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .primary-search-form .btnx {
+        margin-top: 30px;
+    }
+    .returnTic{
+        margin-top: 15px;
+    }
+}

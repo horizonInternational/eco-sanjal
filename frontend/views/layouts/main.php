@@ -76,10 +76,12 @@ AppAsset::register($this);
 </p><![endif]-->
 
 <div id="page">
+
     <!-- Page Loader -->
     <div id="pageloader">
         <div class="loader-item fa fa-spin text-color"></div>
     </div>
+
     <!-- Top Bar -->
     <div id="top-bar" class="top-bar-section top-bar-bg-color">
         <div class="container">
@@ -129,49 +131,6 @@ AppAsset::register($this);
     </div>
     <!-- Top Bar -->
 
-<!--    login/register-->
-
-
-    <div class=" container row collapse" id="login" >
-        <div class="content col-sm-12 col-md-6 col-md-offset-2">
-            <form id="contact-form" class="contact-form" method="post">
-                <h3 class="title">Don&#39;t have an Account? </h3>
-                <div id="success"></div>
-                <div class="row" role="form">
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Email *" autofocus="false" />
-                    </div>
-                </div>
-                <div class="row" role="form">
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Mobile *" />
-                    </div>
-                </div>
-                <div class="row" role="form">
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Password *" />
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <button id="submit" class="btn btn-default">Register Now</button>
-                <!-- .buttons-box --></form>
-        </div>
-        <!-- .content -->
-        <div class="col-sm-12 col-md-4">
-            <form id="contact-form" class="light-bg contact-form " method="post">
-                <h3 class="title">Login Now</h3>
-                <div id="success"></div>
-                <input class="form-control" type="text" name="name" placeholder="User Name *" autofocus="true" />
-                <input class="form-control" type="text" name="password" placeholder="Password *" />
-                <div class="clearfix"></div>
-                <button id="submit" class="btn btn-default">Submit</button>
-                <span class="pull-right">
-                            <a href="#" class="text-success">Forgot Password?</a>
-                        </span>
-                <!-- .buttons-box --></form>
-        </div>
-    </div>
-
     <!-- Sticky Navbar -->
     <header id="sticker" class="sticky-navigation">
         <!-- Sticky Menu -->
@@ -185,9 +144,9 @@ AppAsset::register($this);
                                 <!-- Button For Responsive toggle -->
                                 <button type="button" class="navbar-toggle" data-toggle="collapse"
                                         data-target=".navbar-collapse">
-                                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
-                                            class="icon-bar"></span> <span class="icon-bar"></span></button>
-                                <!-- Logo -->
+                                    <span class="sr-only">Toggle navigation</span>
+                                           <span style="color:#40d4e4" class="fa fa-user" id="navCollapse">Login/Register</span></button>
+
 
                                 <a class="navbar-brand" href="home">
                                     <img class="site_logo" alt="Site Logo" width="190" height="86"
@@ -195,15 +154,15 @@ AppAsset::register($this);
                                 </a>
                             </div>
                             <!-- Navbar Collapse -->
-                            <div class="navbar-collapse collapse">
+                            <div class="navbar-collapse collapse toLogin">
                                 <!-- nav -->
                                 <ul class="nav navbar-nav" style="margin-top:15px">
 
                                     <!-- Pages Mega Menu -->
 
                                         <a href="#">Already have an accout?</a>&emsp;
-                                        <button class="btn btn-deault " data-toggle="collapse" data-target="#login">Login</button>
-                                        <button class="btn btn-deault " data-toggle="collapse" data-target="#login">Register</button>
+                                        <button class="btn btn-deault " data-toggle="collapse" data-target="" id="login">Login</button>
+                                        <button class="btn btn-deault " data-toggle="collapse" data-target="" id="register">Register</button>
 
 
                                     <!-- Shortcode Menu Ends -->
@@ -219,7 +178,7 @@ AppAsset::register($this);
                                         <i class="fa fa-times"></i>
                                     </button>
                                 </div>
-                                <!-- Header Contact Content -->
+
                                 <!-- Header Search Content -->
                                 <div class="bg-white hide-show-content no-display header-search-content">
                                     <form role="search" class="navbar-form vertically-absolute-middle">
@@ -228,35 +187,10 @@ AppAsset::register($this);
                                                    class="form-control" id="s" name="s" value=""/>
                                         </div>
                                     </form>
-                                    <button class="close">
-                                        <i class="fa fa-times"></i>
-                                    </button>
+
                                 </div>
                                 <!-- Header Search Content -->
-                                <!-- Header Share Content -->
-                                <div class="bg-white hide-show-content no-display header-share-content">
-                                    <div class="vertically-absolute-middle social-icon gray-bg icons-circle i-3x">
-                                        <a href="#">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fa fa-pinterest"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fa fa-google"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                    </div>
-                                    <button class="close">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                                </div>
-                                <!-- Header Share Content -->
+
                             </div>
                             <!-- /.navbar-collapse -->
                         </div>
@@ -272,6 +206,50 @@ AppAsset::register($this);
     </header>
     <!-- Sticky Navbar -->
 
+<!--    login and register form-->
+    <div class="container row collapse loginx">
+        <span id="close"><i class="fa fa-times pull-right" ></i></span>
+        <div class="content col-sm-12 col-md-6 col-md-offset-2">
+            <form id="contact-form" class="contact-form" method="post">
+                <h3 class="title">Don&#39;t have an Account? </h3>
+
+
+                <div id="success"></div>
+                <div class="row" role="form">
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="email" placeholder="Email *"  />
+                    </div>
+                </div>
+                    <div class="row" role="form">
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Mobile *" />
+                    </div>
+                </div>
+                <div class="row" role="form">
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Password *" />
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <button id="submit" class="btn btn-default">Register Now</button>
+                <!-- .buttons-box --></form>
+        </div>
+        <!-- .content -->
+        <div class="col-sm-12 col-md-4">
+            <form id="contact-form" class=" contact-form " method="post">
+                <h3 class="title">Login Now</h3>
+                <div id="success"></div>
+                <input class="form-control" type="text" name="name" id="username" placeholder="User Name *" />
+                <input class="form-control" type="text" name="password" placeholder="Password *" />
+                <div class="clearfix"></div>
+                <button id="submit" class="btn btn-default">Submit</button>
+                <span class="pull-right">
+                            <a href="#" class="text-success forget">Forgot Password?</a>
+                        </span>
+                </form>
+        </div>
+    </div>
+<!--    login and register form-->
 
     <!-- Page Content -->
     <?= $content ?>
@@ -384,7 +362,7 @@ AppAsset::register($this);
         <!-- footer-bottom -->
     </footer>
     <!-- footer -->
-    <!-- footer -->
+
 </div>
 
 <!-- CSRF TOKEN -->

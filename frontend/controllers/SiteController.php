@@ -138,4 +138,20 @@ class SiteController extends Controller
     }
 
 
+    public function actionNot_found()
+    {
+        return $this->render('notfound');
+    }
+
+    public function actionError()
+    {
+        $exception = Yii::$app->errorHandler->exception;
+        if ($exception !== null) {
+            $this->layout = 'main';
+            return $this->render('error', ['exception' => $exception]);
+        }
+    }
+
+
+
 }
