@@ -1425,10 +1425,6 @@ $(function () {
 
 $('.loginx').css({"display": "none"});
 
-$("#close").click(function () {
-    $(".loginx").hide();
-});
-
 $("#login").click(function () {
     $(".loginx").show();
     $("#username").focus().select();
@@ -1438,6 +1434,14 @@ $("#register").click(function () {
     $("#email").focus().select();
 
 });
+$( " #close" ).on({
+    "click": function() { $('.loginx').css({"display": "none"}); },
+    "mouseover": function() { $('.loginx').css({"display": "none"}); }
+});
+$(".loginx").mouseleave(function () {
+    $(this).hide();
+});
+
 $("#navCollapse").click(function () {
     $(".toLogin").hide();
     $(".loginx").show();

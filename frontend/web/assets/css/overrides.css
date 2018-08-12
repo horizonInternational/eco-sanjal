@@ -69,8 +69,9 @@
     margin-right: 5px;
 }
 
-.twitter-feed i {
+#twitter .twitter-feed i {
     padding: 42px;
+    background: transparent!important;
 }
 
 .fa-1x i, i.fa-1x {
@@ -92,12 +93,14 @@
 
 
 /* for register and login form*/
+#close{
+    font-size: 19px;
+}
 .loginx{
     padding: 20px;
 }
 
 #login, #register{
-    width:80px;
     background-color: #40d4e4;
     color: #fff;
 }
@@ -117,3 +120,7 @@
         margin-top: 15px;
     }
 }
+
+
+/*sign using facebook*/
+

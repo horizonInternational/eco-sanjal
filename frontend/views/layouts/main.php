@@ -145,7 +145,8 @@ AppAsset::register($this);
                                 <button type="button" class="navbar-toggle" data-toggle="collapse"
                                         data-target=".navbar-collapse">
                                     <span class="sr-only">Toggle navigation</span>
-                                           <span style="color:#40d4e4" class="fa fa-user" id="navCollapse">Login/Register</span></button>
+                                    <span style="color:#40d4e4" class="fa fa-user"
+                                          id="navCollapse">Login/Register</span></button>
 
 
                                 <a class="navbar-brand" href="home">
@@ -160,9 +161,14 @@ AppAsset::register($this);
 
                                     <!-- Pages Mega Menu -->
 
-                                        <a href="#">Already have an accout?</a>&emsp;
-                                        <button class="btn btn-deault " data-toggle="collapse" data-target="" id="login">Login</button>
-                                        <button class="btn btn-deault " data-toggle="collapse" data-target="" id="register">Register</button>
+                                    <a href="#">Don't you have an account?</a>&emsp;
+                                    <button class="btn btn-deault " data-toggle="collapse" data-target="" id="register">
+                                        Register
+                                    </button>
+                                    <button class="btn btn-deault " data-toggle="collapse" data-target="" id="login">
+                                        Login
+                                    </button>
+
 
 
                                     <!-- Shortcode Menu Ends -->
@@ -206,9 +212,9 @@ AppAsset::register($this);
     </header>
     <!-- Sticky Navbar -->
 
-<!--    login and register form-->
+    <!--    login and register form-->
     <div class="container row collapse loginx">
-        <span id="close"><i class="fa fa-times pull-right" ></i></span>
+        <span id="close"><i class="fa fa-times pull-right"></i></span>
         <div class="content col-sm-12 col-md-6 col-md-offset-2">
             <form id="contact-form" class="contact-form" method="post">
                 <h3 class="title">Don&#39;t have an Account? </h3>
@@ -217,17 +223,17 @@ AppAsset::register($this);
                 <div id="success"></div>
                 <div class="row" role="form">
                     <div class="col-md-10">
-                        <input type="text" class="form-control" id="email" placeholder="Email *"  />
-                    </div>
-                </div>
-                    <div class="row" role="form">
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Mobile *" />
+                        <input type="text" class="form-control" id="email" placeholder="Name *"/>
                     </div>
                 </div>
                 <div class="row" role="form">
                     <div class="col-md-10">
-                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Password *" />
+                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Email *"/>
+                    </div>
+                </div>
+                <div class="row" role="form">
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Password *"/>
                     </div>
                 </div>
                 <div class="clearfix"></div>
@@ -235,152 +241,167 @@ AppAsset::register($this);
                 <!-- .buttons-box --></form>
         </div>
         <!-- .content -->
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4" style="margin-top: -17px;">
             <form id="contact-form" class=" contact-form " method="post">
                 <h3 class="title">Login Now</h3>
-                <div id="success"></div>
-                <input class="form-control" type="text" name="name" id="username" placeholder="User Name *" />
-                <input class="form-control" type="text" name="password" placeholder="Password *" />
-                <div class="clearfix"></div>
-                <button id="submit" class="btn btn-default">Submit</button>
-                <span class="pull-right">
+                <div id="success">
+                    <input class="form-control" type="text" name="name" id="username" placeholder="User Name *"/>
+                    <input class="form-control" type="text" name="password" placeholder="Password *"/>
+                    <div class="clearfix">
+                        <button id="submit" class="btn btn-default">Submit</button>
+                        <span class="pull-right">
                             <a href="#" class="text-success forget">Forgot Password?</a>
                         </span>
-                </form>
+                    </div>
+                </div>
+            </form>
+            <div class="orSignUp" style="margin-top: 20px;">
+                    <a href="#" class="btn btn-md " style="color:#fff ;background: #3b5999;">
+                        Sign in with &nbsp;<i class="fa fa-facebook "></i>
+                    </a>&nbsp;
+                    <a href="#" class="btn btn-md "  style="color:#fff ;background: #dd4b39;">
+                       Sign in with &nbsp;<i class="fa fa-google"></i>
+                    </a>
+
+            </div>
         </div>
+        <!--    login and register form-->
     </div>
-<!--    login and register form-->
 
-    <!-- Page Content -->
-    <?= $content ?>
 
-    <!-- Footer -->
-    <footer id = "footer">
+        <!-- Page Content -->
+        <?= $content ?>
 
-        <div class = "footer-widget">
-            <div class = "container">
-                <div class = "row">
-                    <div class = "col-xs-12 col-sm-6 col-md-3 widget bottom-xs-pad-20">
-                        <div class = "widget-title">
-                            <!-- Title -->
-                            <h3 class = "title">Contact Information</h3>
+        <!-- Footer -->
+        <footer id="footer">
+
+            <div class="footer-widget">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3 widget bottom-xs-pad-20">
+                            <div class="widget-title">
+                                <!-- Title -->
+                                <h3 class="title">Contact Information</h3>
+                            </div>
+                            <!-- Address -->
+                            <p>
+                                <strong>Office:</strong> Ejosanjal.com <br/>No. 12, Ribon Building
+                            </p>
+                            <!-- Phone -->
+                            <p>
+                                <strong>Call Us:</strong> +0 (123) 456-78-90 or <br/>+0 (123) 456-78-90
+                            </p>
                         </div>
-                        <!-- Address -->
-                        <p>
-                            <strong>Office:</strong> Ejosanjal.com <br/>No. 12, Ribon Building
-                        </p>
-                        <!-- Phone -->
-                        <p>
-                            <strong>Call Us:</strong> +0 (123) 456-78-90 or <br/>+0 (123) 456-78-90
-                        </p>
-                    </div>
-                    <div class = "col-xs-12 col-sm-6 col-md-3 widget bottom-xs-pad-20">
-                        <div class = "widget-title">
-                            <!-- Title -->
-                            <h3 class = "title">Quick Links</h3>
-                        </div>
-                        <nav>
-                            <ul>
-                                <!-- List Items -->
-                                <li>
-                                    <a href = "#">Home</a>
-                                </li>
-                                <li>
-                                    <a href = "#">About</a>
-                                </li>
-                                <li>
-                                    <a href = "#">Contact</a>
-                                </li>
-                                <li>
-                                    <a href = "faq">FAQ</a>
-                                </li>
+                        <div class="col-xs-12 col-sm-6 col-md-3 widget bottom-xs-pad-20">
+                            <div class="widget-title">
+                                <!-- Title -->
+                                <h3 class="title">Quick Links</h3>
+                            </div>
+                            <nav>
+                                <ul>
+                                    <!-- List Items -->
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq">FAQ</a>
+                                    </li>
 
-                            </ul>
-                        </nav>
+                                </ul>
+                            </nav>
 
-
-                    </div>
-                    <div class = "col-xs-12 col-sm-6 col-md-3 widget newsletter bottom-xs-pad-20">
-                        <div class = "widget-title">
-                            <!-- Title -->
-                            <h3 class = "title"> Terms & Policies </h3>
-                        </div>
-                        <div>
-                            <!-- Text -->
-                            <p>Subscribe to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</p>
-                            <p class = "form-message1" style = "display: none;"></p>
-                            <div class = "clearfix"></div>
-                            <!-- Form -->
 
                         </div>
-                        <!-- Count -->
+                        <div class="col-xs-12 col-sm-6 col-md-3 widget newsletter bottom-xs-pad-20">
+                            <div class="widget-title">
+                                <!-- Title -->
+                                <h3 class="title"> Terms & Policies </h3>
+                            </div>
+                            <div>
+                                <!-- Text -->
+                                <p>Subscribe to Our Newsletter to get Important News, Amazing Offers &amp; Inside
+                                    Scoops:</p>
+                                <p class="form-message1" style="display: none;"></p>
+                                <div class="clearfix"></div>
+                                <!-- Form -->
 
-                    </div>
-                    <!-- .newsletter -->
+                            </div>
+                            <!-- Count -->
 
-                    <div class = "col-xs-12 col-sm-6 col-md-3 widget">
-                        <div class = "widget-title">
-                            <!-- Title -->
-                            <h3 class = "title">About us </h3>
                         </div>
-                        <nav>
-                            <ul class = "footer-blog">
-                                <!-- List Items -->
-                                <li>
-                                    <a href = "#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-                                </li>
+                        <!-- .newsletter -->
 
-                            </ul>
-                        </nav>
+                        <div class="col-xs-12 col-sm-6 col-md-3 widget">
+                            <div class="widget-title">
+                                <!-- Title -->
+                                <h3 class="title">About us </h3>
+                            </div>
+                            <nav>
+                                <ul class="footer-blog">
+                                    <!-- List Items -->
+                                    <li>
+                                        <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum
+                                            dolor
+                                            sit amet, consectetur adipisicing elit.</a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- footer-top -->
-        <div class = "copyright">
-            <div class = "container">
-                <div class = "row">
-                    <!-- Copyrights -->
-                    <div class = "col-xs-10 col-sm-6 col-md-6"> &copy; 2015
-                        <a href = "http://zozothemes.com/">ecosanjal.com</a>
-                        . Creative Agency. <br/>
-                        <!-- Terms Link -->
+            <!-- footer-top -->
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <!-- Copyrights -->
+                        <div class="col-xs-10 col-sm-6 col-md-6"> &copy; 2015
+                            <a href="http://zozothemes.com/">ecosanjal.com</a>
+                            . Creative Agency. <br/>
+                            <!-- Terms Link -->
 
-                        <a href = "#">Terms of Use</a>
-                        /
-                        <a href = "#">Privacy Policy</a>
-                    </div>
-                    <div class = "col-xs-2 col-sm-6 col-md-6 text-right page-scroll gray-bg icons-circle i-3x">
-                        <!-- Goto Top -->
-                        <a href = "#page">
-                            <i class = "glyphicon glyphicon-arrow-up"></i>
-                        </a>
+                            <a href="#">Terms of Use</a>
+                            /
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                        <div class="col-xs-2 col-sm-6 col-md-6 text-right page-scroll gray-bg icons-circle i-3x">
+                            <!-- Goto Top -->
+                            <a href="#page">
+                                <i class="glyphicon glyphicon-arrow-up"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- footer-bottom -->
-    </footer>
-    <!-- footer -->
+            <!-- footer-bottom -->
+        </footer>
+        <!-- footer -->
 
-</div>
+    </div>
 
-<!-- CSRF TOKEN -->
-<script>
-    $.ajaxSetup({
-        data: {
-            _csrf: $('meta[name=csrf-token]').prop('content')
-        }
-    });
-</script>
+    <!-- CSRF TOKEN -->
+    <script>
+        $.ajaxSetup({
+            data: {
+                _csrf: $('meta[name=csrf-token]').prop('content')
+            }
+        });
+    </script>
 
-<!--Custom JavaScript -->
-<script src="<?php echo Yii::$app->request->baseUrl; ?>/assets/js/plugins.min.js"></script>
-<script src="<?php echo Yii::$app->request->baseUrl; ?>/assets/js/bootstrap-datepicker.js"></script>
+    <!--Custom JavaScript -->
+    <script src="<?php echo Yii::$app->request->baseUrl; ?>/assets/js/plugins.min.js"></script>
+    <script src="<?php echo Yii::$app->request->baseUrl; ?>/assets/js/bootstrap-datepicker.js"></script>
 
 
-<?php $this->endBody(); ?>
-<script src="<?php echo Yii::$app->request->baseUrl; ?>/assets/js/custom.js"></script>
+    <?php $this->endBody(); ?>
+    <script src="<?php echo Yii::$app->request->baseUrl; ?>/assets/js/custom.js"></script>
 
 </body>
 </html>

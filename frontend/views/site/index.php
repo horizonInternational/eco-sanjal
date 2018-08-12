@@ -455,16 +455,13 @@
                     <div class="text-center">
                         <h2 class="section-title white">Connect With Us</h2>
 
-<!--                        <a href="http://facebook.com" class="btn btn-social-icon btn-facebook">-->
-<!--                            <i class="fa fa-facebook"></i></a>-->
-<!--                        <a class="btn btn-social-icon btn-bitbucket"><i class="fa fa-bitbucket"></i></a>-->
-                        <a class="btn btn-social-icon btn-dropbox"><i class="fa fa-dropbox"></i></a>
-                        <a class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></a>
-                        <a class="btn btn-social-icon btn-google-plus"><i class="fa fa-google-plus"></i></a>
-                        <a class="btn btn-social-icon btn-instagram"><i class="fa fa-instagram"></i></a>
-                        <a class="btn btn-social-icon btn-google-plus"><i class="fa fa-google-plus"></i></a>
-                        <a class="btn btn-social-icon btn-instagram"><i class="fa fa-instagram"></i></a>
-
+                        <a href="http://facebook.com" class="btn btn-social-icon btn-facebook">
+                            <i class="fa fa-facebook" style="color: #3B5998;"></i></a>
+                        <a class="btn btn-social-icon btn-google-plus" style="color:#cd201f "><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" style="color: #55acee;"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-instagram" style="color:#e4405f; "><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-pinterest" style="color:#bd081c "><i class="fa fa-pinterest"></i></a>
+<!--                        <a class="btn btn-social-icon btn-linkedin" style="color:#0077B5 "><i class="fa fa-linkedin"></i></a>-->
                     </div>
 
 
